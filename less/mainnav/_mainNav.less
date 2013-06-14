@@ -1,6 +1,33 @@
+@import "../_mixins";
+
 .mainNav {
-  height: 18px;
+  min-height: 18px;
+  font-size: 16px;
+  line-height: 16px;
   margin-bottom: 40px;
   background: #5ba660;
   border-bottom: solid 2px #337f35;
+
+  &__wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    .clearfix;
+  }
+
+  &__item {
+    float: left;
+    width: 125px;
+    padding: 8px 0 6px;
+    text-align: center;
+    text-decoration: none;
+    &:link,
+    &:visited {
+      color: #FFF;
+    }
+
+    &_active_true,
+    &:hover {
+      background: #337f35;
+    }
+  }
 }
