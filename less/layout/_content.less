@@ -1,0 +1,72 @@
+@import "../_variables";
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.heading {
+  &__content {
+    border-bottom: solid 2px;
+  }
+
+  &__link {
+    text-decoration: none;
+    border-bottom: solid 2px;
+  }
+
+  &_color_ntv {
+    .heading__content {
+      border-color: @ntvColor;
+    }
+    .heading__link {
+      color: @ntvColor;
+    }
+  }
+
+  &_color_physic {
+    .heading__content {
+      border-color: @physicColor;
+    }
+    .heading__link {
+      color: @physicColor;
+    }
+  }
+
+  &_color_it {
+    .heading__content {
+      border-color: @itColor;
+    }
+    .heading__link {
+      color: @itColor;
+    }
+  }
+
+  &_color_economy {
+    .heading__content {
+      border-color: @economyColor;
+    }
+    .heading__link {
+      color: @economyColor;
+    }
+  }
+
+  &_color_human {
+    .heading__content {
+      border-color: @humanColor;
+    }
+    .heading__link {
+      color: @humanColor;
+    }
+  }
+}
