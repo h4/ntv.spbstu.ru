@@ -1,0 +1,45 @@
+.langSwitch {
+  position: relative;
+  top: -1px;
+  font-size: 11px;
+
+  &__item {
+    margin-right: 15px;
+    text-decoration: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:before {
+      content: "";
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      height: 11px;
+      width: 14px;
+      margin-right: 3px;
+      background: url("../i/flags.png");
+    }
+
+    &_active_true {
+      color: #000;
+
+      &:link {
+        color: #000;
+      }
+    }
+
+    &_lang_ru {
+      &:before {
+        background-position: -1px -2px;
+      }
+    }
+
+    &_lang_en {
+      &:before {
+        background-position: -19px -2px;
+      }
+    }
+  }
+}

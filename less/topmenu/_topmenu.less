@@ -2,12 +2,13 @@
 
 .topmenu {
   height: 16px;
+  margin-bottom: 4px;
   background: #b3b3b3;
+  .clearfix;
 
   &__wrapper {
     width: 1000px;
     margin: 0 auto;
-    .clearfix;
   }
 
   &__sectionSwitcher {
@@ -17,8 +18,9 @@
 
   &__langSwitch {
     float: right;
-    width: 125px;
+    width: 100px;
   }
 }
 
 @import "_sectionSwitcher";
+@import "_langSwitch";
