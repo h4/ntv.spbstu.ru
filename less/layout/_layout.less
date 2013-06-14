@@ -1,0 +1,32 @@
+@import "../_mixins";
+
+.main {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-bottom: 20px;
+  .clearfix;
+}
+
+.wideColumn {
+  float: left;
+  width: 650px;
+  margin-right: 50px;
+}
+
+.sidebar {
+  width: 300px;
+  float: left;
+}
+
+.twoColumn {
+  .clearfix;
+
+  &__item {
+    float: left;
+    width: 460px;
+    margin-right: 35px;
+  }
+}
