@@ -1,3 +1,4 @@
+@import "../_variables";
 @import "../_mixins";
 
 .mainNav {
@@ -5,8 +6,8 @@
   font-size: 16px;
   line-height: 16px;
   margin-bottom: 40px;
-  background: #5ba660;
-  border-bottom: solid 2px #337f35;
+  background: @ntvColor;
+  border-bottom: solid 2px darken(@ntvColor, 20%);
 
   &__wrapper {
     width: 1000px;
@@ -27,7 +28,7 @@
 
     &_active_true,
     &:hover {
-      background: #337f35;
+      background: darken(@ntvColor, 20%);
     }
   }
 }

@@ -1,0 +1,28 @@
+@import "_variables";
+
+@main-color: @itColor;
+@darken-color: darken(@main-color, 20%);
+
+.heading__content {
+  border-color: @main-color;
+}
+
+.heading__link {
+  color: @main-color;
+}
+
+.mainNav {
+  background: @main-color;
+  border-bottom-color: @darken-color;
+
+  &__item {
+    &_active_true,
+    &:hover {
+      background: @darken-color;
+    }
+  }
+}
+
+.footer {
+  border-color: @main-color;
+}
