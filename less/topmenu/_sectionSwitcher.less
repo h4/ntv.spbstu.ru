@@ -1,7 +1,9 @@
 @import "../_variables";
+@import "../_mixins";
 
 .sectionSwitcher {
   &__item {
+    position: relative;
     width: 177px;
     height: 16px;
     float: left;
@@ -25,5 +27,23 @@
     &_color_human {
       background: @humanColor;
     }
+  }
+
+  &__itemText {
+    font-size: 12px;
+    line-height: 1.2;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 5px 8px;
+    background: inherit;
+    color: #FFF;
+  }
+
+  &__item:hover .sectionSwitcher__itemText {
+    display: block;
+    box-shadow: 0 0px 4px #333;
   }
 }
