@@ -1,0 +1,35 @@
+@import "../_mixins";
+
+.newMagazineBlock {
+  .clearfix;
+  position: relative;
+  margin-bottom: 40px;
+
+  &__cover {
+    float: left;
+    width: 110px;
+  }
+
+  &__coverImg {
+    width: 100%;
+  }
+
+  &__title {
+    margin-left: 120px;
+  }
+
+  &__date {
+    display: block;
+    font-weight: bold;
+  }
+
+  &__links {
+    position: absolute;
+    left: 120px;
+    bottom: 0;
+  }
+
+  &__link {
+    display: block;
+  }
+}
