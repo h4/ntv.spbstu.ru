@@ -1,6 +1,15 @@
 .news {
+  margin-left: 0;
+  margin-bottom: 30px;
+
   &__item {
+    text-indent: 0;
     margin-bottom: 20px;
+
+    &:before {
+      content: "";
+      display: none;
+    }
   }
 
   &__date {

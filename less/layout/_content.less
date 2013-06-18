@@ -25,6 +25,27 @@ em {
   font-style: italic;
 }
 
+ul,
+ol {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+ul li {
+  text-indent: -8px;
+
+  &:before {
+    content: "–";
+    display: inline-block;
+    width: 8px;
+    color: #999;
+  }
+}
+
+ol {
+  list-style: decimal;
+}
+
 td {
   border: solid 1px #333;
 }
@@ -38,6 +59,12 @@ th {
 .heading {
   &__content {
     border-bottom: solid 2px;
+  }
+
+  &__info {
+    font-size: 12px;
+    display: block;
+    color: #666;
   }
 
   &__link {
