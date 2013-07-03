@@ -125,8 +125,49 @@
                     <span class="heading__content">Комментарии</span>
                 </h2>
 
+                <div class="commentsList">
+                    <article class="commentsList__item">
+                        <p>Очень спасибо!</p>
+                        <p>А как быть с дизайнерами, которые, не до конца (если не до начала) представляют, что и как работает в браузерах? И вообще, Вадим, какова должна быть степень осведомленности о современном вебе у дизайнера, который хочет рисовать сайты в духе времени? Я в последнее время сталкиваюсь с тем, что дизайнеру нравится какой-нибудь западный сайт, который он берет и копирует, абсолютно не уделяя при этом внимания основной концепции, положенной в основу такого сайта...</p>
+                        <footer class="commentsList__info">
+                            <p class="commentsList__author">Олег</p>
+                            <time class="commentsList__time">27 мая в 14:21</time>
+                        </footer>
+                    </article>
+
+                    <article class="commentsList__item">
+                        <p>Олег, я искренне убеждён, что дизайнеру о веб-технологиях лучше не знать. С одной стороны, это конечно минус, что дизайнер не сможет сам воплотить прототип. С другой стороны, дизайнер в таком случае не будет ограничивать себя рамками «возможного», то есть не будет сразу же верстать в голове, рисуя.</p>
+
+                        <p>Однако это не отменяет того, что дизайнер должен хорошо разбираться в интерфейсных взаимодействиях, чтобы не нарисовать принципиально непонятный пользователю вращающийся трёхмерный куб с формой регистрации.</p>
+                        <footer class="commentsList__info">
+                            <p class="commentsList__author">Фёдор</p>
+                            <time class="commentsList__time">27 мая в 19:10</time>
+                        </footer>
+                    </article>
+                </div>
+
                 <div class="commentsForm">
-                    блок комментариев (нужно посмотреть, как выводится в битриксе)
+                    <form action="">
+                        <div class="commentsForm__row">
+                            <label class="commentsForm__label" for="name">Имя и фамилия:</label>
+                            <input class="commentsForm__field" type="text" name="name" id="name"/>
+                        </div>
+
+                        <div class="commentsForm__row">
+                            <label class="commentsForm__label" for="email">Email:</label>
+                            <input class="commentsForm__field" type="text" name="email" id="email"/>
+                        </div>
+
+                        <div class="commentsForm__row">
+                            <label class="commentsForm__label" for="email">Текст комментария:</label>
+                            <textarea class="commentsForm__text"></textarea>
+                        </div>
+
+                        <div class="commentsForm__row">
+                            <span class="commentsForm__label">&nbsp;</span>
+                            <input class="commentsForm__submit" type="submit" value="Отправить"/>
+                        </div>
+                    </form>
                 </div>
             </div>
 
